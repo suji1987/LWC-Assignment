@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>*</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>AuraDefinitionBundle</name>
+	</types>
+	<types>
+		<members>standard__LightningSales</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
+		<members>Assignment_c.Description_c</members>
+		<members>Assignment_c.DueDate_c</members>
+		<members>Assignment_c.Status_c</members>
+		<members>Assignment_c.Title_c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Assignment__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Assignment_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	
+	<version>55.0</version>
+</Package>

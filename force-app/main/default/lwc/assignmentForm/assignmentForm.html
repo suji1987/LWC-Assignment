@@ -1,0 +1,55 @@
+<template>
+
+    <template if:true={statusPicklistValues.data}>
+
+        <div>
+
+        <lightning-layout multiple-rows>
+            
+            <lightning-layout-item size="6" padding="around-small">
+                <div class="custom-box">
+                    <lightning-input type="text" name="Name" label="Name" value={assignmentObjData.Name} class="inputfield"
+                    onchange={handleAssignmentValueChange} max-length="255" required message-when-value-missing="Required"></lightning-input>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="6" padding="around-small">
+                <div class="custom-box">
+                    <lightning-input type="text" name="Title__c" label="Title" value={assignmentObjData.Title__c} class="inputfield"
+                    onchange={handleAssignmentValueChange} max-length="255" required message-when-value-missing="Required"></lightning-input>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="6" padding="around-small">
+                <div class="custom-box">
+                    <lightning-input type="date" name="DueDate__c" label="Due Date" value={assignmentObjData.DueDate__c} class="inputfield"
+                    onchange={handleAssignmentValueChange} required message-when-value-missing="Required"></lightning-input>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="6" padding="around-small">
+                <div class="custom-box">
+                    <lightning-combobox
+                        name="Status__c" required message-when-value-missing="Required"
+                        label="Status" class="inputfield"
+                        value={assignmentObjData.Status__c}
+                        placeholder="Select Status"
+                        options={statusPicklistValues.data.values}
+                        onchange={handleAssignmentValueChange} ></lightning-combobox>
+                </div>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-small">
+                <div class="custom-box">
+                    <lightning-textarea name="Description__c" label="Description" value={assignmentObjData.Description__c} class="inputfield"
+                    onchange={handleAssignmentValueChange} required message-when-value-missing="Required"></lightning-textarea>
+                </div>
+            </lightning-layout-item>
+            
+        </lightning-layout>
+
+    </div>
+
+    </template>
+
+</template>
